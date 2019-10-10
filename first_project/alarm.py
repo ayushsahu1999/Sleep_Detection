@@ -3,7 +3,6 @@ def test():
 	return 'Hello'
 
 
-
 def main():
 	# import the necessary packages
 	from scipy.spatial import distance as dist
