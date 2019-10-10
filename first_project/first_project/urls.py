@@ -19,7 +19,12 @@ from django.conf.urls import url, include
 from first_app import views
 
 urlpatterns = [
-    url(r'^$', views.form, name='form'),
+    url(r'^$', views.index, name='index'),
+    #url(r'^$', views.form, name='form'),
     path('admin/', admin.site.urls),
     url(r'^final/', views.final, name='final'),
+    url(r'^user_login/form', views.form, name='form'),
+    url(r'^register/$', views.register, name='register'),
+    url(r'^logout/$', views.user_logout, name='logout'),
+    url(r'^user_login/', views.user_login, name='user_login'),
 ]
